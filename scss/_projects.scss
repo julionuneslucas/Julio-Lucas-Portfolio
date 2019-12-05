@@ -1,0 +1,102 @@
+.projects {
+    padding-bottom: 2rem;
+
+    .projects_bio-image{
+        height: 30vh;
+        width: 100%;
+
+        background: // gradient left 0.9 to right 0.3 
+        linear-gradient(
+            to right, 
+            rgba($primary-color, 0.9), 
+            rgba($primary-color, 0.3)
+            ), 
+            url("../img/bg_foto.jpg") center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    .text-secondary {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    }
+
+    
+    .projects_items {
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr; //fr - 1fr is for 1 part of the available space.
+        gap:2rem;        
+    }
+
+    .project_item {
+        position: relative; //absolutely position item
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+         }
+
+         // An orange background appears
+         &:after { // pseudo-element is used to style specified parts of an element.
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $secondary-color;
+            opacity: 0;
+            @include transition-ease;
+         }
+
+         &:hover {
+             &:after {
+                 bottom: 0;
+                 opacity: 0.9;
+             }
+             .projects_btn{
+                 opacity: 1; // opacity of icons "white"
+             }
+         }
+    }
+
+    .project_btns{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // each item occupy 50% of the total wight 
+        align-items: center;
+        text-align: center;
+    }
+
+    .projects_btn {
+        opacity: 0;
+        color: set-text-color($secondary-color); // function @if white | @else black
+        @include transition-ease;
+
+        &:hover {
+            color: set-text-color(set-text-color($secondary-color)); // function @if black | @else white
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer { // copyright position in vertical
+         transform: 
+         rotate(90deg)
+         translate(-3rem, -5rem);
+    }
+}

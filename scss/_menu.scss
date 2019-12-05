@@ -1,0 +1,121 @@
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    right: 1rem; //1x Relative to font-size of the root element
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer; // cursor symbol a finger
+    @include transition-ease; // smooth transition in social-icons buttons
+   
+    .menu-btn_burger{
+        // middle bar of the menu
+        position: absolute; 
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: set-text-color($primary-color);
+        @include transition-ease; // smooth transition in social-icons buttons
+
+        // first bar of the menu
+        &:before{
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: set-text-color($primary-color);
+            @include transition-ease; // smooth transition in social-icons buttons
+        }
+
+        // third bar of the menu
+        &:after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background: set-text-color($primary-color);
+            @include transition-ease; // smooth transition in social-icons buttons
+        }
+        
+        // animation bars burger menu
+        &.open{
+            transform: rotate(720deg);
+            background: transparent;
+
+            &:before {
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            &:after {
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+
+    &.open{
+        visibility: visible;
+    }
+
+    .menu-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden; // dont want scroll-bars
+        background: $primary-color;
+        list-style-type: none; //without bullet points
+        padding-right: 1rem;
+        transform: translateY(-100%); // Menu start of the page at the top 
+        @include transition-ease;
+
+        &.open {
+            transform: translateY(0); // clicking the burger menu is centered on the page
+        }
+
+        .menu-nav_item {
+            transform: translateX(100vw); // menu links come from right side
+            @include transition-ease;
+
+            &.open { // class in JS
+                transform: translateX(0); // menu itens move from right to the center
+            }
+
+            &.active > a {
+                color: $secondary-color; // highlight the page color is active
+            }
+        }
+
+        .menu-nav_link {
+            display: inline-block;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0; //top/button | left/right
+            font-weight: 300;  
+            @include transition-ease;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+// FOR LOOP - will add a delay for each nav item menu
+@for $i from 1 through 4 { 
+    .menu-nav .menu-nav_item:nth-child(#{$i}) { //wrap the variable "{$i}" with "#" | The :nth-child(n) selector matches every element that is the nth child, regardless of type, of its parent.
+        transition-delay: ($i * 0.1s) + 0.15s; // iterate the delay on items      
+    }
+} 

@@ -1,0 +1,43 @@
+.contact {
+    height: 100%;
+    padding-top: 18vh; //40% of the viewport height
+    overflow: hidden; //property controls what happens to content that is too big to fit into an area.
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: // gradient left 0.9 to right 0.3 
+        linear-gradient(
+            to right, 
+            rgba($primary-color, 0.9), 
+            rgba($primary-color, 0.3)
+            ), 
+            url("../img/bg_foto.jpg") center top;
+    background-size: cover;
+
+    .jl_photo{
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        max-width: 100%;
+        height: auto;
+        margin-bottom:1rem; // 5x Relative to font-size of the root element
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact_list {
+        display: grid;
+        // align-items: center;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .social-icons {
+        position: initial;
+        margin-top: 2rem;
+    }
+}
