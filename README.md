@@ -18,4 +18,4 @@ Site structured by four pages: Home, About Me, My Projects and Contact Me.
 
 Files Types: .html, .scss, css, .jpg and .js.
 
-site is published at https://julionuneslucas.github.io/condofirst.github.pt/
+site is published at  https://julionuneslucas.github.io/Julio-Lucas-Portfolio/
