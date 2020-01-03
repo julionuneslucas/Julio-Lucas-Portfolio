@@ -260,8 +260,8 @@
 }
 
 .about footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
+  -webkit-transform: rotate(90deg) translate(-5rem, -5rem);
+          transform: rotate(90deg) translate(-5rem, -5rem);
 }
 
 .projects {
@@ -375,8 +375,8 @@
 }
 
 .projects footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
+  -webkit-transform: rotate(90deg) translate(-5rem, -5rem);
+          transform: rotate(90deg) translate(-5rem, -5rem);
 }
 
 .contact {

@@ -61,9 +61,10 @@
         flex-direction: column;
     }
 
-    footer { // copyright position in vertical
+    // copyright position in vertical
+    footer { 
          transform: 
          rotate(90deg)
-         translate(-3rem, -5rem);
+         translate(-5rem, -5rem);
     }
 }
