@@ -1,21 +1,32 @@
-### Basic Usage
-
-Tools: 
-
-HTML5 - https://www.w3schools.com/html/html5_intro.asp;
-
-CSS3 - https://www.w3schools.com/css/;
-
-Sass - https://www.w3schools.com/sass/;
-
-JavaScript - https://www.w3schools.com/js/.
+# Julio Lucas Portfolio
 
 ## About
 
-A Portfolio Website.
+Portfolio Website with fixed topbar and four diferent layout´s:
+- Full Screen Photo layout;
+- One-Column Layout;
+- Boxes Layout;
+- Featured Image Layout
 
-Site structured by four pages: Home, About Me, My Projects and Contact Me.
 
-Files Types: .html, .scss, css, .jpg and .js.
 
-site is published at  https://julionuneslucas.github.io/Julio-Lucas-Portfolio/
+A multi page design structure. Organized to ensure content and navigation is simple and direct. 
+
+Structure with four pages:
+
+- Home;
+- About Me;
+- My Projects;
+- Contact Me.
+
+site is published at https://julionuneslucas.github.io/Julio-Lucas-Portfolio/
+
+### Basic Usage
+
+- HTML5; 
+- CSS3; 
+- SASS; 
+- JavaScript;
+- Font-Awesome.
+
+
