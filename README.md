@@ -2,22 +2,11 @@
 
 ## About
 
-Portfolio Website with fixed topbar and four diferent layout´s:
-- Full Screen Photo layout;
-- One-Column Layout;
-- Boxes Layout;
-- Featured Image Layout
-
-
-
-A multi page design structure. Organized to ensure content and navigation is simple and direct. 
-
-Structure with four pages:
-
-- Home;
-- About Me;
-- My Projects;
-- Contact Me.
+Portfolio Website with fixed topbar and four diferent layouts:
+- Full Screen Photo layout (Home);
+- One-Column Layout (About Me);
+- Boxes Layout (My Projects);
+- Featured Image Layout (Contact Me).
 
 site is published at https://julionuneslucas.github.io/Julio-Lucas-Portfolio/
 
