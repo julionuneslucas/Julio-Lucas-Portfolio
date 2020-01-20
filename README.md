@@ -1,6 +1,9 @@
 # Julio Lucas Portfolio
 A portfolio website.
 
+## Prerequisites
+Use a recent browser. For example: Google Chrome, Mozilla Firefox, Opera, Microsoft Edge or Vivaldi.
+
 ## About
 
 Portfolio Website with fixed topbar and four diferent layouts:
