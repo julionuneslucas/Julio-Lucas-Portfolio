@@ -22,4 +22,9 @@ site is published at https://julionuneslucas.github.io/Julio-Lucas-Portfolio/
 - JavaScript;
 - Font-Awesome.
 
+## Author
+
+- **Júlio Lucas** - code and design.
+
+
 
