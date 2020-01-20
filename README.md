@@ -1,12 +1,13 @@
 # Julio Lucas Portfolio
+A portfolio website.
 
 ## About
 
 Portfolio Website with fixed topbar and four diferent layouts:
-- Full Screen Photo layout (Home);
-- One-Column Layout (About Me);
-- Boxes Layout (My Projects);
-- Featured Image Layout (Contact Me).
+- Home (Full Screen Photo layout);
+- About Me (One-Column Layout);
+- My Projects (Boxes Layout);
+- Contact Me (Featured Image Layout).
 
 site is published at https://julionuneslucas.github.io/Julio-Lucas-Portfolio/
 
